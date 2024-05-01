@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intercambio de Elementos en un Arreglo</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Intercambio de Elementos en un Arreglo</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div id="arregloOriginal"></div>
+            <div id="arregloModificado"></div>
+        </section>
+    </main>
+    <footer>
+        <h6>InovaByte Tech</h6>
+    </footer>
+    <script>
+        let arreglo = [12, 18, 20, 42, 50];
+        let arregloOriginalDiv = document.getElementById('arregloOriginal');
+        let arregloModificadoDiv = document.getElementById('arregloModificado');
+
+        arregloOriginalDiv.textContent = "Arreglo original: " + arreglo.join(", ");
+
+        let temp = arreglo[0];
+        arreglo[0] = arreglo[arreglo.length - 1];
+        arreglo[arreglo.length - 1] = temp;
+
+        arregloModificadoDiv.textContent = "Arreglo modificado: " + arreglo.join(", ");
+    </script>
+</body>
+</html>

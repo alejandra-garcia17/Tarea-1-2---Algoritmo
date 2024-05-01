@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Elementos de un Arreglo</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mostrar Elementos de un Arreglo</h1>
+    </header>
+    <main>
+        <section class="container">
+            <div id="elementos"></div>
+        </section>
+    </main>
+    <footer>
+        <h6>InovaByte Tech</h6>
+    </footer>
+    <script>
+        const arreglo = [15, 20, 25, 30, 35];
+        let elementosDiv = document.getElementById('elementos');
+
+        elementosDiv.innerHTML += `<p>El primer elemento del arreglo es: ${arreglo[0]}</p>`;
+        elementosDiv.innerHTML += `<p>El elemento del medio es: ${arreglo[Math.floor(arreglo.length / 2)]}</p>`;
+        elementosDiv.innerHTML += `<p>El último elemento del arreglo es: ${arreglo[arreglo.length - 1]}</p>`;
+    </script>
+</body>
+</html>

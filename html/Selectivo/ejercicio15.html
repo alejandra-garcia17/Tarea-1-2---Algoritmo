@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Vehículo</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Venta de Vehículo</h1>
+    </header>
+    <main>
+        <section class="container">
+            <label for="precioVenta">Ingrese precio de Venta:</label>
+            <input type="number" id="precioVenta" required>
+            <br>
+            <label for="anioFabricacion">Ingrese año de fabricación:</label>
+            <input type="number" id="anioFabricacion" required>
+            <br>
+            <div class="botones">
+                <button type="button" class="boton" onclick="calcularPrecioFinal()">Calcular precio final</button>
+            </div>
+        <div id="resultado">
+            Respuesta:
+        </div>
+        </section>
+    </main>
+    <footer>
+        <h6>InovaByte Tech</h6>
+    </footer>
+    <script src="/Selectivos/ejercicio15.js"></script>
+</body>
+</html>
