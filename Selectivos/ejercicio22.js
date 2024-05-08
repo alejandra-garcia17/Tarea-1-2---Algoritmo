@@ -4,25 +4,25 @@
 // Proceso: 
 // Salida: suma
 
-/*Función sumarElementos()
-    elementos = []
-    Para i = 1 hasta 5 hacer
-        Leer valor desde 'elemento' + i
-        Convertir valor a entero
-        Agregar valor a elementos[]
-    Fin Para
-
-    suma = sumar(elementos)
-    Mostrar "La suma de los elementos es: " + suma
-Fin Función
-
-Función sumar(lista)
-    total = 0
-    Para cada elemento en lista hacer
-        total = total + elemento
-    Fin Para
-    Devolver total
-Fin Función*/
+/*Algoritmo SumaElementosArreglo
+    Definir elementos, suma, i Como Entero
+	Dimension elementos[5]
+	
+    // Leer los elementos del arreglo
+    Para i <- 0 Hasta 4 Hacer
+        Escribir "Ingrese el elemento ", i, ": "
+        Leer elementos[i]
+    FinPara
+	
+    // Calcular la suma de los elementos
+    suma <- 0
+    Para i <- 0 Hasta 4 Hacer
+        suma <- suma + elementos[i]
+    FinPara
+	
+    // Mostrar el resultado
+    Escribir "La suma de los elementos es: ", suma
+FinAlgoritmo*/
 
 function sumarElementos() {
     let elementos = [];
