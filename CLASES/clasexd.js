@@ -71,7 +71,7 @@ function numeroMayoroMenor() {
     arreglo.push(parseInt(Math.random()*100))
     console.log(arreglo)
 
-    if (arreglo[1] > arreglo[0] || arreglo[0] < arreglo[2]  ){
+    if (arreglo[1] > arreglo[0] || arreglo[1] < arreglo[2]  ){
          console.log(arreglo[0], arreglo[1], arreglo[2])
     } else {
         console.log("no cumple el requisito")
